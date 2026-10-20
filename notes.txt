@@ -23,4 +23,7 @@
 - Using clamp for dial and width% for the rings with an aspect ratio of 1
     + The values are random right now, need to calculate / experiment with preview panel and screen sizes
 
+#5
+- Added Y scroll snapping to each section
+    - https://css-tricks.com/practical-css-scroll-snapping/
 
