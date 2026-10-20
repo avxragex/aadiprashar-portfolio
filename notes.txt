@@ -17,6 +17,10 @@
 - Added name label logo (positioning isn't completely right will come back)
 - Changed key styling and font (need to add label icons)
     + For the key icons, I'm planning on using divs and css, I was about to use the google material symbols but think making them myself will be better so I can create the icons in a box rather than a symbol and create effects / changes easier
-- 
+
+
+#4
+- Using clamp for dial and width% for the rings with an aspect ratio of 1
+    + The values are random right now, need to calculate / experiment with preview panel and screen sizes
 
 
