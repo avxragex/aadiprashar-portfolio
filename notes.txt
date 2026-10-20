@@ -1,6 +1,14 @@
+// The # describe the different things I've worked on during different sittings on that day
+
 21/10/2026:
 
 #1
 - Formatted the code.
 - Started working on the fixed right nav (showing where the user currently is)
 - Added about / contact pages and their respective sizes
+
+#2
+- Fixed navbar and linked it to the sections
+- Repositioning / sizing of orrery section
+- Added buttons w styling
+- Learnt about color mix by AI trying to set background color opacity on set variables
