@@ -12,3 +12,11 @@
 - Repositioning / sizing of orrery section
 - Added buttons w styling
 - Learnt about color mix by AI trying to set background color opacity on set variables
+
+#3
+- Added name label logo (positioning isn't completely right will come back)
+- Changed key styling and font (need to add label icons)
+    + For the key icons, I'm planning on using divs and css, I was about to use the google material symbols but think making them myself will be better so I can create the icons in a box rather than a symbol and create effects / changes easier
+- 
+
+
