@@ -5,6 +5,7 @@
   --panel: #12100B;
   --border: #342A1C;
   --offwhite: #EDE6D6;
+  --line: #241E15; 
   --gold: #C9A227;
 }
 
@@ -20,19 +21,45 @@ body {
   font-family: "EB Garamond", Georgia, serif;
 }
 
-
-
 /* ----------------
-Home page 
+Index page 
 ---------------- */
 
-/* Hero section */
+/* The navigation bar */
+.navbar {
+  background-color: var(--panel);
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  right: 0px;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* Links inside the navbar */
+.navbar a {
+  float: left;
+  color: var(--offwhite);
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.navbar a:hover {
+  background: var(--offwhite);
+  color: gold;
+}
+
+/* ----------------
+Home section 
+---------------- */
 .hero {
   height: 100vh;
   padding: 0 80px;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  border-bottom: 1px solid var(--line);
 }
 
 /* Hero text */
@@ -90,32 +117,40 @@ Home page
   height: 800px;
 }
 
-
 .scroll {
+  position: absolute;
+  left: 50%;
+  bottom: 5%;
+  transform: translate(-50%, -50%);
+}
+
+.scroll-text {
   font-family: "Cormorant Garamond", serif;
   font-size: 12px;
   letter-spacing: 5px;
   color: var(--gold);
   text-align: center;
-  margin-top: 150px;
 }
 
 .scroll-line {
   width: 1px;
-  height: 40px;
+  height: 60px;
   background: var(--gold);
   margin: 10px auto 0 auto;
 }
 
 
-/* Orrery */
-
+/* ----------------
+Orrery Section 
+---------------- */
 .orrery {
+  height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 60px;
   padding: 80px;
+  border-bottom: 1px solid var(--line);
 }
 
 .dial {
@@ -135,23 +170,23 @@ Home page
 }
 
 .r1 {
-    width: 110px;
-    height: 110px;
+  width: 110px;
+  height: 110px;
 }
 
 .r2 {
-    width: 240px;
-    height: 240px;
+  width: 240px;
+  height: 240px;
 }
 
 .r3 {
-    width: 360px;
-    height: 360px;
+  width: 360px;
+  height: 360px;
 }
 
 .r4 {
-    width: 500px;
-    height: 500px;
+  width: 500px;
+  height: 500px;
 }
 
 .centre {
@@ -171,6 +206,32 @@ Home page
   height: 420px;
   background: var(--panel);
   border: 1px solid var(--border);
+}
+
+/* ----------------
+About Section 
+---------------- */
+.about {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 60px;
+  padding: 80px;
+  border-bottom: 1px solid var(--line);
+}
+
+/* ----------------
+Contact Section 
+---------------- */
+.contact {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 60px;
+  padding: 80px;
+  border-bottom: 1px solid var(--line);
 }
 
 
@@ -194,28 +255,28 @@ Mobile
     width: 100%;
     font-size: 14px;
   }
-  
+
   .hero-rings .r1 {
     width: 100px;
     height: 100px;
   }
-  
+
   .hero-rings .r2 {
     width: 200px;
     height: 200px;
   }
-  
+
   .hero-rings .r3 {
     width: 300px;
     height: 300px;
   }
-  
+
   .hero-rings .r4 {
     width: 400px;
     height: 400px;
   }
 
-  
+
   /* Orrery */
   .orrery {
     flex-direction: column;
@@ -229,23 +290,23 @@ Mobile
   }
 
   .r1 {
-      width: 70px;
-      height: 70px;
+    width: 70px;
+    height: 70px;
   }
-  
+
   .r2 {
-      width: 140px;
-      height: 140px;
+    width: 140px;
+    height: 140px;
   }
-  
+
   .r3 {
-      width: 210px;
-      height: 210px;
+    width: 210px;
+    height: 210px;
   }
-  
+
   .r4 {
-      width: 290px;
-      height: 290px;
+    width: 290px;
+    height: 290px;
   }
 
   .preview {

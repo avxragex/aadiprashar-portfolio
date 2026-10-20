@@ -1,0 +1,6 @@
+21/10/2026:
+
+#1
+- Formatted the code.
+- Started working on the fixed right nav (showing where the user currently is)
+- Added about / contact pages and their respective sizes
