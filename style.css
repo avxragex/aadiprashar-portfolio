@@ -7,6 +7,7 @@
   --offwhite: #EDE6D6;
   --line: #241E15; 
   --gold: #C9A227;
+  --amber: #B4472A;
 }
 
 * {
@@ -22,7 +23,7 @@ body {
   color: var(--offwhite);
   font-family: "EB Garamond", Georgia, serif;
   height: 100vh;
-  overflow: auto;
+  overflow-y: auto;
   scroll-snap-type: y proximity;
 }
 
@@ -72,14 +73,14 @@ Index page
 /* Navbar snippet from W3Schools then edited */
 /* The navigation bar */
 .navbar {
-  background-color: color-mix(in srgb, var(--panel) 50%, transparent);
+
   font-size: 14px;
   font-family: "Cormorant Garamond", serif;
   text-transform: uppercase;
   position: fixed;
   display: flex;
   flex-direction: column;
-  right: 5px;
+  right: 15px;
   top: 50%;
   transform: translateY(-50%);
   z-index: 10;
@@ -301,7 +302,33 @@ Orrery Section
 .key li {
   font-family: 'JetBrains Mono', monospace;
   font-size: 12px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }
+
+/* Key icons */
+.key .game {
+  color: var(--amber);
+}
+
+.key .website {
+  color: var(--gold);
+}
+
+.key .art-finished {
+  color: var(--offwhite);
+}
+
+.key .art-study {
+  color: var(--offwhite);
+  font-size: 8px;
+}
+
+.key .fav {
+  color: var(--gold);
+}
+
 
 /* Buttons */
 .orrery-buttons {

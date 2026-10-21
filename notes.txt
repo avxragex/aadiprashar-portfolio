@@ -34,3 +34,12 @@
     - I didn't realise you cannot edit the CSS dashed border property and have to use SVG instead
 - Changed navbar position and made text uppercase through css rather than html
 - Updated hero ring positioning / size / overflow
+
+
+22/10/2026:
+
+#7
+- Tried making the plot icons myself, but realised the benefits aren't that great. Instead using bootstrap because it has everything I need
+    - https://icons.getbootstrap.com/usage/
+    - https://icons.getbootstrap.com/
+
