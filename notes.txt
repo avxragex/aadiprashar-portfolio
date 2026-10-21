@@ -27,3 +27,10 @@
 - Added Y scroll snapping to each section
     - https://css-tricks.com/practical-css-scroll-snapping/
 
+#6
+- Made Y scrolling proximity rather than mandatory
+- Updated hero rings to use clamp like orrery
+- Used Claude to help edit orrery dashed border (30 18)
+    - I didn't realise you cannot edit the CSS dashed border property and have to use SVG instead
+- Changed navbar position and made text uppercase through css rather than html
+- Updated hero ring positioning / size / overflow
