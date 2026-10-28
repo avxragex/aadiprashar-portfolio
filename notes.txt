@@ -43,3 +43,8 @@
     - https://icons.getbootstrap.com/usage/
     - https://icons.getbootstrap.com/
 
+
+28/10/2026:
+
+#8
+- Started experimenting with viewport and positioning of ring / fonts

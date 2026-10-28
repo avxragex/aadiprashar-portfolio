@@ -114,7 +114,7 @@ Home section
 ---------------- */
 .hero-section {
   height: 100vh;
-  padding: 0 80px;
+  padding: 0 clamp(20px, 7vw, 140px);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -128,7 +128,7 @@ Home section
 .hero-section h1 {
   font-family: "Cormorant Garamond", serif;
   font-weight: 300;
-  font-size: 120px;
+  font-size: clamp(44px, 8vw, 170px);
   line-height: 1;
   letter-spacing: 14px;
   text-transform: uppercase;
@@ -149,8 +149,9 @@ Home section
 .hero-rings {
   position: absolute;
   right: -5%;
-  top: -15%;
-  width: clamp(400px, 65%, 1200px);
+  top: 59%;
+  transform: translateY(-50%);
+  width: clamp(20vw, 50vw, 60vw);
   aspect-ratio: 1;
   z-index: 9;
   opacity: 70%;
@@ -172,7 +173,7 @@ Home section
   cy: 50%;
   fill: none;
   stroke: var(--border);
-  stroke-width: 1;
+  stroke-width: 2;
   stroke-dasharray: 30 18;
 }
 
@@ -258,7 +259,7 @@ Orrery Section
   cy: 50%;
   fill: none;
   stroke: var(--border);
-  stroke-width: 1;
+  stroke-width: 2;
   stroke-dasharray: 30 18;
 }
 
