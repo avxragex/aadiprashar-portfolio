@@ -505,3 +505,14 @@ Contact Section
   stroke-width: 3;
   stroke-dasharray: 60 80;
 }
+
+/* Content */
+.artwork-content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 20vw;
+  display: flex;
+  flex-direction: column;
+  z-index: 10;
+}

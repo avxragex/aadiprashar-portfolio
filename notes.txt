@@ -69,3 +69,6 @@
 #12
 - Started working on the artwork project pages
 - Used same SVG ring as the orrery for the artwork / info split
+
+#13
+- Added all the artwork page information content
