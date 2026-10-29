@@ -54,3 +54,8 @@
 #9
 - Found Theo Soti's CSS radar animation: https://cssradar.com/blog/css-radar-animation.html which is very similar to what I want to do
 - Implemented it into my orrery to start the animation. However, I'll most likely change from using CSS for the rotation to JS since I'll need some formula
+
+#10
+- Added hand to the sweep.
+    - Positioned hand 50% from bottom so it's in vertically in the centre and matches the sweep
+    - Made height 52% since the outter most ring size is 50%, causing slight overflow.

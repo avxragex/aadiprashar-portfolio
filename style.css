@@ -240,6 +240,8 @@ Orrery Section
   width: clamp(250px, 40%, 1000px);
   aspect-ratio: 1;
   position: relative;
+  border-radius: 50%;
+  overflow: visible;
 }
 
 /* Ring / dial styling */
@@ -249,7 +251,6 @@ Orrery Section
   inset: 0;
   width: 100%;
   height: 100%;
-  overflow: visible;
   pointer-events: none;
 }
 
@@ -267,7 +268,14 @@ Orrery Section
 https://cssradar.com/blog/css-radar-animation.html --- */
 
 /* Sweep */
-.sweep{
+.sweep-group {
+  position: absolute;
+  inset: 0;
+  animation: radar-sweep 9s linear infinite;
+  overflow: inherit;
+}
+
+.sweep {
   position: absolute;
   inset: 0;
   border-radius: 50%;
@@ -281,9 +289,9 @@ https://cssradar.com/blog/css-radar-animation.html --- */
   border-radius: inherit;
   background: conic-gradient(
     from 0deg,
-    transparent 0 72%,
-    color-mix(in srgb, var(--gold) 18%, transparent) 92%,
-    color-mix(in srgb, var(--gold) 40%, transparent) 100%
+    transparent 0 89%,
+    color-mix(in srgb, var(--gold) 8%, transparent) 94%,
+    color-mix(in srgb, var(--gold) 22%, transparent) 97%
   );
 }
 
@@ -293,12 +301,19 @@ https://cssradar.com/blog/css-radar-animation.html --- */
   }
 }
 
-.sweep::before {
-  animation: radar-sweep 9s linear infinite;
+/*--- End of adapted code --- */
+/* Orrery hand */
+.hand {
+  position: absolute;
+  width: 4px;
+  height: 52%;
+  left: 50%;
+  bottom: 50%;
+  transform: translate(-50%, 0);
+  background: var(--gold);
 }
 
-/*--- End of adapted code --- */
-
+/* Orrery Centre Name */
 .orrery-name {
   position: absolute;
   top: 50%;
