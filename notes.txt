@@ -59,3 +59,9 @@
 - Added hand to the sweep.
     - Positioned hand 50% from bottom so it's in vertically in the centre and matches the sweep
     - Made height 52% since the outter most ring size is 50%, causing slight overflow.
+
+#11
+- Started working on trying to plot the projects on the orrery
+    - Used the "CSS radar animation" to start with plots, as well as asked Claude for a strategy / plan to turn data into plot coords
+    - For now just manually placed plots
+    - Will keep each project as an array of objects

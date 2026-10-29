@@ -7,6 +7,7 @@
     <title>THTR30042 Portfolio</title>
     <link href="style.css" rel="stylesheet" type="text/css" media="all">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.2/font/bootstrap-icons.min.css">
+    <script src="js/orrery.js" defer></script>
   </head>
 
   <body>
@@ -59,10 +60,18 @@
         </svg>
 
         <!-- Dial Sweep -->
-        <div class="sweep-group">
+        <div class="orrery-sweep">
           <div class="sweep"></div>
           <div class="hand"></div>
         </div>
+
+        <!-- Centre + Plots -->
+        <div class="orrery-centre" aria-hidden="true"></div>
+        <ul class="orrery-plots">
+          <li class="orrery-plot" style="--bx: 69%; --by: 39%"></li>
+          <li class="orrery-plot" style="--bx: 79%; --by: 55%"></li>
+          <li class="orrery-plot" style="--bx: 70%; --by: 79%"></li>
+        </ul>
 
         <div class="orrery-name">Aadi Prashar</div>
       </div>

@@ -268,7 +268,7 @@ Orrery Section
 https://cssradar.com/blog/css-radar-animation.html --- */
 
 /* Sweep */
-.sweep-group {
+.orrery-sweep {
   position: absolute;
   inset: 0;
   animation: radar-sweep 9s linear infinite;
@@ -301,7 +301,36 @@ https://cssradar.com/blog/css-radar-animation.html --- */
   }
 }
 
+/* Centre Plot */
+.orrery-centre {
+  position: absolute;
+  inset: 0;
+  margin: auto;
+  inline-size: 10px;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  background: var(--gold);
+}
+
+.orrery-plots {
+  z-index: 10;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.orrery-plot {
+  position: absolute;
+  inset-inline-start: var(--bx);
+  inset-block-start: var(--by);
+  translate: -50% -50%;
+  inline-size: 10px;
+  aspect-ratio: 1;
+  rotate: 45deg;
+  background: var(--offwhite);
+}
 /*--- End of adapted code --- */
+
 /* Orrery hand */
 .hand {
   position: absolute;
@@ -316,6 +345,7 @@ https://cssradar.com/blog/css-radar-animation.html --- */
 /* Orrery Centre Name */
 .orrery-name {
   position: absolute;
+  display: none;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
