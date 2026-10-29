@@ -65,3 +65,7 @@
     - Used the "CSS radar animation" to start with plots, as well as asked Claude for a strategy / plan to turn data into plot coords
     - For now just manually placed plots
     - Will keep each project as an array of objects
+
+#12
+- Started working on the artwork project pages
+- Used same SVG ring as the orrery for the artwork / info split
