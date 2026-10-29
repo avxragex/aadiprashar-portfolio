@@ -80,3 +80,5 @@
     - Wanted to try make information hug the curve, but not sure how. 
     - Even after asking Claude, didn't really understand. Will come back to this.
 
+#15
+- Added Artwork image / background panel to artwork page
