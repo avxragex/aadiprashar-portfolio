@@ -263,6 +263,42 @@ Orrery Section
   stroke-dasharray: 30 18;
 }
 
+/*--- Code adapted from Theo Soti "CSS radar animation": 
+https://cssradar.com/blog/css-radar-animation.html --- */
+
+/* Sweep */
+.sweep{
+  position: absolute;
+  inset: 0;
+  border-radius: 50%;
+  overflow: clip;
+}
+
+.sweep::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  background: conic-gradient(
+    from 0deg,
+    transparent 0 72%,
+    color-mix(in srgb, var(--gold) 18%, transparent) 92%,
+    color-mix(in srgb, var(--gold) 40%, transparent) 100%
+  );
+}
+
+@keyframes radar-sweep {
+  to {
+    rotate: 1turn;
+  }
+}
+
+.sweep::before {
+  animation: radar-sweep 9s linear infinite;
+}
+
+/*--- End of adapted code --- */
+
 .orrery-name {
   position: absolute;
   top: 50%;
