@@ -72,3 +72,11 @@
 
 #13
 - Added all the artwork page information content
+    - Didn't know descriptive lists (dl) exist, learnt about it from Claude
+
+#14
+- Added styling to the information content on Artwork page
+- Basic column layout unlike my Figma prototype
+    - Wanted to try make information hug the curve, but not sure how. 
+    - Even after asking Claude, didn't really understand. Will come back to this.
+
