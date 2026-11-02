@@ -190,10 +190,13 @@ Orrery Section
 /* Name wordmark label */
 .name-label {
   position: sticky;
+  z-index: 10;
   top: 20px;
+  left: 20px;
   margin: 20px 0 0 20px;
   font-family: "Cormorant Garamond", serif;
   text-transform: uppercase;
+  text-decoration: none;
 }
 
 .name-label .first-name {
@@ -448,7 +451,6 @@ Contact Section
 
 .project-header .project-type {
   text-transform: uppercase;
-  font-family: "Cormorant Garamond", serif;
   display: flex;
   align-items: center;
   gap: 10px;
@@ -535,6 +537,105 @@ Contact Section
   right: -12%;
   transform: translate(0, -50%);
   width: 80vw;
+  z-index: -1;
+}
+
+.artwork img {
+  width: 100%;
+  height: 100%;
+}
+
+
+/* ************************************
+
+----------- WEBSITE.HTML ----------------
+
+************************************* */
+.project-header .project-type .website {
+  color: var(--gold);
+}
+
+/* Ring Arc */
+.website-arc {
+  position: absolute;
+  top: clamp(-2000px, -5vw, -200px);
+  transform: translate(0, -50%);
+  left: 30vw;
+  width: 130vw;
+  aspect-ratio: 1;
+  z-index: 2;
+}
+
+.website-arc .ring {
+  fill: var(--bg);
+  stroke-width: 3;
+  stroke-dasharray: 60 80;
+}
+
+/* Content */
+.website-content {
+  position: absolute;
+  top: 50%;
+  right: 20vw;
+  transform: translate(0, -50%);
+  max-width: 25vw;
+  display: flex;
+  flex-direction: column;
+  z-index: 10;
+  align-items: flex-start;
+  gap: 30px;
+}
+
+.artwork-number {
+  font-family: 'JetBrains Mono', monospace;
+  text-transform: uppercase;
+  font-size: 13px;
+  color: var(--gold);
+}
+
+.artwork-title {
+  font-size: 50px;
+}
+
+.status {
+  border: 1.5px solid var(--gold);
+  color: var(--gold);
+  padding: 8px 32px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.artwork-data {
+  width: 100%;
+  font-family: 'JetBrains Mono', monospace;
+  color: var(--dim);
+  padding-bottom: 10px;
+}
+
+.data-row {
+  display: flex;
+  justify-content: space-between;
+  padding: 6px 0;
+  border-bottom: 1px solid var(--dim);
+}
+
+.artwork-description {
+  max-width: 50ch;
+  font-size: 20px;
+}
+
+.nav-buttons {
+  display: flex;
+  gap: 10px;
+}
+
+/* Artwork */
+.artwork {
+  position: absolute;
+  top: 50%;
+  left: 10%;
+  transform: translate(0, -50%);
+  width: 40vw;
   z-index: -1;
 }
 

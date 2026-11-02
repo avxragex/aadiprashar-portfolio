@@ -92,6 +92,13 @@
     - Especially without old background panel.
     - Will have to see how other artwork integrate to this.
 
+#17
+- Made name wordmark a link to home
+- Copied artwork page to create website page
+- Working on the arc and content positioning
+    - Website ring / content positioning isn't that good currently
+    + To make it even more responsive, will go back and use more clamps throughout the css, especially for the ring.
+
 Feedback 30/10/26:
 - Add intentionallity between the element / pages, maybe use some intentional different colour within the different artworks, and somehow make a link with them in other places.
 - Make artwork image bleed out top, right, bottom etc. Gets rid of the need of the back panel, and makes it look very nice. Use the pixels.
