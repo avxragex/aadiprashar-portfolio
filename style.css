@@ -192,11 +192,14 @@ Orrery Section
   position: sticky;
   z-index: 10;
   top: 20px;
-  left: 20px;
   margin: 20px 0 0 20px;
   font-family: "Cormorant Garamond", serif;
   text-transform: uppercase;
   text-decoration: none;
+}
+
+.home-name-label {
+  left: 20px;
 }
 
 .name-label .first-name {
@@ -558,10 +561,10 @@ Contact Section
 /* Ring Arc */
 .website-arc {
   position: absolute;
-  top: clamp(-2000px, -5vw, -200px);
+  top: 5%;
   transform: translate(0, -50%);
-  left: 30vw;
-  width: 130vw;
+  left: 40%;
+  width: clamp(1200px, 130vw, 2300px);
   aspect-ratio: 1;
   z-index: 2;
 }
@@ -575,25 +578,25 @@ Contact Section
 /* Content */
 .website-content {
   position: absolute;
-  top: 50%;
-  right: 20vw;
   transform: translate(0, -50%);
+  top: 40%;
+  right: 13vw;
   max-width: 25vw;
   display: flex;
   flex-direction: column;
   z-index: 10;
-  align-items: flex-start;
+  align-items: center;
   gap: 30px;
 }
 
-.artwork-number {
+.website-number {
   font-family: 'JetBrains Mono', monospace;
   text-transform: uppercase;
   font-size: 13px;
   color: var(--gold);
 }
 
-.artwork-title {
+.website-title {
   font-size: 50px;
 }
 
@@ -605,7 +608,7 @@ Contact Section
   text-transform: uppercase;
 }
 
-.artwork-data {
+.website-data {
   width: 100%;
   font-family: 'JetBrains Mono', monospace;
   color: var(--dim);
@@ -619,7 +622,7 @@ Contact Section
   border-bottom: 1px solid var(--dim);
 }
 
-.artwork-description {
+.website-description {
   max-width: 50ch;
   font-size: 20px;
 }
@@ -630,14 +633,6 @@ Contact Section
 }
 
 /* Artwork */
-.artwork {
-  position: absolute;
-  top: 50%;
-  left: 10%;
-  transform: translate(0, -50%);
-  width: 40vw;
-  z-index: -1;
-}
 
 .artwork img {
   width: 100%;
