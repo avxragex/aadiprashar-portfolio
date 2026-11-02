@@ -32,7 +32,6 @@ body {
   scroll-snap-type: y proximity;
 }
 
-/* Buttons from W3Schools */
 /* Buttons */
 .button {
   border: 2px solid var(--border);
@@ -93,7 +92,6 @@ body {
 
 /* Links inside the navbar */
 .navbar a {
-  float: left;
   color: var(--offwhite);
   text-align: center;
   padding: 14px 16px;
@@ -127,7 +125,6 @@ Home section
 
 /* Hero text */
 .hero-section h1 {
-  font-family: "Cormorant Garamond", serif;
   font-weight: 300;
   font-size: clamp(44px, 8vw, 170px);
   line-height: 1;
@@ -150,30 +147,10 @@ Home section
   right: -5%;
   top: 59%;
   transform: translateY(-50%);
-  width: clamp(20vw, 50vw, 60vw);
+  width: 50vw;
   aspect-ratio: 1;
   z-index: 9;
   opacity: 70%;
-}
-
-/* Claude gen */
-.hero-rings .rings {
-  position: absolute;
-  inset: 0;
-  width: 100%;
-  height: 100%;
-  overflow: visible;
-  pointer-events: none;
-}
-
-/* Claude gen */
-.hero-rings .ring {
-  cx: 50%;
-  cy: 50%;
-  fill: none;
-  stroke: var(--border);
-  stroke-width: 2;
-  stroke-dasharray: 30 18;
 }
 
 /* Scroll line */
@@ -206,9 +183,6 @@ Orrery Section
 .orrery-section {
   position: relative;
   height: 100vh;
-  align-items: center;
-  justify-content: center;
-  gap: 60px;
   border-bottom: 1px solid var(--line);
   scroll-snap-align: start;
 }
@@ -238,7 +212,6 @@ Orrery Section
   transform: translate(-50%, -50%);
   width: clamp(250px, 40%, 1000px);
   aspect-ratio: 1;
-  position: relative;
   border-radius: 50%;
   overflow: visible;
 }
@@ -312,7 +285,6 @@ https://cssradar.com/blog/css-radar-animation.html --- */
 }
 
 .orrery-plots {
-  z-index: 10;
   margin: 0;
   padding: 0;
   list-style: none;
@@ -371,7 +343,6 @@ https://cssradar.com/blog/css-radar-animation.html --- */
 
 .key-title {
   font-size: 14px;
-  color: var(--offwhite);
   margin-bottom: 10px;
 }
 
@@ -473,7 +444,6 @@ Contact Section
 .project-header .name-label {
   top: 0;
   margin: 0;
-  position: sticky;
 }
 
 .project-header .project-type {
@@ -531,7 +501,6 @@ Contact Section
   color: var(--gold);
   padding: 8px 32px;
   text-align: center;
-  margin: 4px 2px;
   text-transform: uppercase;
 }
 
@@ -562,27 +531,15 @@ Contact Section
 /* Artwork */
 .artwork {
   position: absolute;
-  top: 45%;
-  right: 3%;
+  top: 50%;
+  right: -12%;
   transform: translate(0, -50%);
-  width: 45vw;
-  z-index: 3;
+  width: 80vw;
+  z-index: -1;
 }
 
 .artwork img {
   width: 100%;
   height: 100%;
-  object-fit: contain;
 }
 
-/* Panel that sits behind artwork */
-.background-panel {
-  position: absolute;
-  width: 95vw;
-  height: 50vh;
-  background-color: color-mix(in srgb, var(--gold) 20%, transparent 100%);
-  top: 50%;
-  left: 0;
-  transform: translate(0, -50%);
-  z-index: 1;
-}

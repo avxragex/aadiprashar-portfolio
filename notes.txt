@@ -82,3 +82,21 @@
 
 #15
 - Added Artwork image / background panel to artwork page
+    - Not sure yet if I'm going to have multiple HTML pages for each artwork, or JS dynamically updating them.
+    - Might also add a seperate navbar, looks a bit bland
+
+03/11/2026:
+
+#16
+- Listened to feedback and made artwork image much larger and bleed off the page. Makes it look much nicer.
+    - Especially without old background panel.
+    - Will have to see how other artwork integrate to this.
+
+Feedback 30/10/26:
+- Add intentionallity between the element / pages, maybe use some intentional different colour within the different artworks, and somehow make a link with them in other places.
+- Make artwork image bleed out top, right, bottom etc. Gets rid of the need of the back panel, and makes it look very nice. Use the pixels.
+- For the website designs, it's more important to show the designing process / drafts etc. Make it about my design rather than Mochi Donuts. Can include the website at the bottom, but the start should show off my process / what I do + Mochi Donuts doesn't really fit in that well right now.
+- Add another way to go back to familiarity page, probably a navbar in the project pages.
+- Add a bit more margin between text at the corner, especially in index.
+- To have elements hug the line, we can use element wrap, especially for the text to make them show the form. But this should be a very low priority, highest should be getting pages done / orrery functional.
+- The scroll location bar has a much higher contrast compared to the buttons - draws the attention rather than the buttons that should.
