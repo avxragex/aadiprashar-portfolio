@@ -356,9 +356,16 @@ https://cssradar.com/blog/css-radar-animation.html --- */
 
 /* Preview window */
 .preview {
-  display: none;
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
   width: 300px;
-  height: 420px;
+  height: 50vh;
+  padding: 20px;
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
   background: var(--panel);
   border: 1px solid var(--border);
 }

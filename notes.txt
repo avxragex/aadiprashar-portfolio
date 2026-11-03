@@ -10,6 +10,7 @@ Feedback 30/10/26:
 - Add a bit more margin between text at the corner, especially in index.
 - To have elements hug the line, we can use element wrap, especially for the text to make them show the form. But this should be a very low priority, highest should be getting pages done / orrery functional.
 - The scroll location bar has a much higher contrast compared to the buttons - draws the attention rather than the buttons that should.
+- The tutor preferred a still preview window rather than the rotating panel
 
 
 // Progress notes
@@ -134,3 +135,9 @@ Feedback 30/10/26:
 
 #22
 - Follow CSS Radar Animation guide and edited it a bit to add a ping to the plots as the hand goes past it.
+
+04/11/2026:
+
+#23
+- Added preview window with same structure as artwork page content
+    - Put it on the left side, but might change the positioning because feels very left heavy
