@@ -362,12 +362,17 @@ https://cssradar.com/blog/css-radar-animation.html --- */
   width: 300px;
   height: 50vh;
   padding: 20px;
-  margin: 20px;
+  margin-left: 3vw;
   display: flex;
   flex-direction: column;
   gap: 20px;
   background: var(--panel);
   border: 1px solid var(--border);
+}
+
+.preview-data {
+  font-family: 'JetBrains Mono', monospace;
+  color: var(--dim);
 }
 
 /* Key */

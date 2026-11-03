@@ -141,3 +141,10 @@ Feedback 30/10/26:
 #23
 - Added preview window with same structure as artwork page content
     - Put it on the left side, but might change the positioning because feels very left heavy
+
+#24
+- Working on making preview dynamic while orrery spins
+    - Removed preview description for now as it's not added in JS right now, might add later
+- Added IDs to all preview data elements, and called them in orrery.js
+- Made a function to change elements to a different projects
+- Function wasn't working for a while, realised it was because I forgot to give title an id (I thought I had due to the class)
