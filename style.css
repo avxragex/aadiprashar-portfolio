@@ -294,6 +294,7 @@ https://cssradar.com/blog/css-radar-animation.html --- */
   margin: 0;
   padding: 0;
   list-style: none;
+  z-index: 5;
 }
 
 /* Converting polar into top / left */
@@ -366,24 +367,24 @@ https://cssradar.com/blog/css-radar-animation.html --- */
 }
 
 /* Key icons */
-.key .game {
+.game {
   color: var(--amber);
 }
 
-.key .website {
+.website {
   color: var(--gold);
 }
 
-.key .art-finished {
+.art-finished {
   color: var(--offwhite);
 }
 
-.key .art-study {
+.art-study {
   color: var(--offwhite);
   font-size: 8px;
 }
 
-.key .fav {
+.fav {
   color: var(--gold);
 }
 
