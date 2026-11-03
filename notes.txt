@@ -128,3 +128,9 @@ Feedback 30/10/26:
     - Replaced Object.groupBy / Object.entires with a for loop over sectors and a filter.
     - Added sector start / end variables rather than the array
     - Renamed the loop parameters, makes it more readable
+
+#21
+- Added icon type to project array, and replaced the text name with icon on orrery
+
+#22
+- Follow CSS Radar Animation guide and edited it a bit to add a ping to the plots as the hand goes past it.

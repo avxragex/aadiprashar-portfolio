@@ -9,6 +9,8 @@
   --line: #241E15; 
   --gold: #C9A227;
   --amber: #B4472A;
+
+  --sweep-duration: 9s;
 }
 
 html {
@@ -249,7 +251,7 @@ https://cssradar.com/blog/css-radar-animation.html --- */
 .orrery-sweep {
   position: absolute;
   inset: 0;
-  animation: radar-sweep 9s linear infinite;
+  animation: radar-sweep var(--sweep-duration) linear infinite;
   overflow: inherit;
 }
 
@@ -304,6 +306,28 @@ https://cssradar.com/blog/css-radar-animation.html --- */
   left: calc(50% + sin(var(--angle)) * var(--distance));
   top: calc(50% - cos(var(--angle)) * var(--distance));
   translate: -50% -50%;
+}
+
+.orrery-plot .bi {
+  animation: orrery-ping var(--sweep-duration) linear infinite;
+  animation-delay: calc(var(--turn) * var(--sweep-duration));
+  opacity: 0.45;
+  font-size: 12px;
+}
+
+@keyframes orrery-ping {
+  0%   {  
+    opacity: 1;
+    scale: 2.4;
+    font-size: 18px;
+  }
+
+  15%,
+  100% {
+    opacity: 0.45;
+    scale: 1;
+    font-size: 12px;
+  }
 }
 /*--- End of adapted code --- */
 
