@@ -315,6 +315,10 @@ https://cssradar.com/blog/css-radar-animation.html --- */
   font-size: 12px;
 }
 
+.orrery-plot .selected {
+  font-size: 300px;
+}
+
 @keyframes orrery-ping {
   0%   {  
     opacity: 1;

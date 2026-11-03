@@ -148,3 +148,9 @@ Feedback 30/10/26:
 - Added IDs to all preview data elements, and called them in orrery.js
 - Made a function to change elements to a different projects
 - Function wasn't working for a while, realised it was because I forgot to give title an id (I thought I had due to the class)
+
+#25
+- Added time taken to JS object
+    - Still need to add project images / thumbnails for preview
+- Made preview window update everytime a plot is pinged on the orrery
+    - Realised I can easily update the preview window by using animationstart and animationiteration event listeners
