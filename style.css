@@ -296,15 +296,13 @@ https://cssradar.com/blog/css-radar-animation.html --- */
   list-style: none;
 }
 
+/* Converting polar into top / left */
 .orrery-plot {
+  --angle: calc(var(--turn) * 1turn);
   position: absolute;
-  inset-inline-start: var(--bx);
-  inset-block-start: var(--by);
+  left: calc(50% + sin(var(--angle)) * var(--distance));
+  top: calc(50% - cos(var(--angle)) * var(--distance));
   translate: -50% -50%;
-  inline-size: 10px;
-  aspect-ratio: 1;
-  rotate: 45deg;
-  background: var(--offwhite);
 }
 /*--- End of adapted code --- */
 

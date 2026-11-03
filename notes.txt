@@ -104,6 +104,11 @@
     - Struggling a lot to find a positinoning of the arc / content which I'm happy with
     - Aligned website content to the center, might change it to either right or back to left later depending on feedback
 
+#19
+- Used Claude (currently fully copy pasted) to convert date / sector into polar coordinates
+    + It doesn't work yet, I need to go through it, edit / change it to fit in more
+- Used CSS Radar Animation CSS code for the plot where they convert it from polar units to CSS left / top
+
 Feedback 30/10/26:
 - Add intentionallity between the element / pages, maybe use some intentional different colour within the different artworks, and somehow make a link with them in other places.
 - Make artwork image bleed out top, right, bottom etc. Gets rid of the need of the back panel, and makes it look very nice. Use the pixels.
