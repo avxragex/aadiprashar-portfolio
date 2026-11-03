@@ -154,3 +154,10 @@ Feedback 30/10/26:
     - Still need to add project images / thumbnails for preview
 - Made preview window update everytime a plot is pinged on the orrery
     - Realised I can easily update the preview window by using animationstart and animationiteration event listeners
+
+#26
+- Fixed misspelt selectedPlot variable in JS
+- Changed colour of selected plot
+    - Red for now, will change it to a proper colour later, or something else which shows selected
+- Added simple pause to orrery by toggling class to stop animation
+    - Still need to change text on button everytime it's paused / played

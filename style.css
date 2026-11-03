@@ -315,8 +315,8 @@ https://cssradar.com/blog/css-radar-animation.html --- */
   font-size: 12px;
 }
 
-.orrery-plot .selected {
-  font-size: 300px;
+.orrery-plot.selected .bi {
+  color: red;
 }
 
 @keyframes orrery-ping {
@@ -334,6 +334,16 @@ https://cssradar.com/blog/css-radar-animation.html --- */
   }
 }
 /*--- End of adapted code --- */
+
+/* pause orrery sweep if orrery paused */
+.orrery-paused .orrery-sweep {
+  animation-play-state: paused;
+}
+
+/* pause orrery icons if orrery paused */
+.orrery-paused .orrery-plot .bi {
+  animation-play-state: paused;
+}
 
 /* Orrery hand */
 .hand {
