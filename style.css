@@ -522,6 +522,28 @@ https://cssradar.com/blog/css-radar-animation.html --- */
   border-top: 1px solid var(--border);
   border-bottom: 1px solid var(--border);
   align-items: center;
+  transition-duration: 0.4s;
+}
+
+.list-row i {
+  transition-duration: 0.4s;
+  font-size: 14px;
+}
+
+.list-row:hover {
+  border-color: var(--gold);
+}
+
+.list-row:hover a {
+  color: var(--gold);
+}
+
+.list-row:hover .list-text {
+  color: var(--gold);
+}
+
+.list-row:hover i {
+  font-size: 24px;
 }
 
 .list-row a {

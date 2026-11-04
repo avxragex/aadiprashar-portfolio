@@ -184,6 +184,9 @@ Feedback 30/10/26:
     - Realised it's because HTML prioritised our spreadsheet, so needed to add to CSS
     - Have used random font sizes / width / height. Will most likely change
 
-
+#30
+- Added hover affects to list view
+    - Simple hover effects but makes it look so much nicer.
+    - Especially the size increase in the icon
 
 
