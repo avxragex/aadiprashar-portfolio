@@ -166,3 +166,12 @@ Feedback 30/10/26:
 - Updated pause button text context on toggle
 - Added thumbnails to the assets for the preview panel, and to the projects object
 - Used Claude to help me create the sector labels and divider
+
+#28
+- Added a age label in middle of orrery
+    - Might have to change if I reposition the orrery or sector start
+- Made preview thumbnail update
+- Created a normal list for the projects using JS
+- Made button functional to change between list and dial
+    - Still need to add list css (Not sure if I keep preview with list yet or not)
+

@@ -399,6 +399,24 @@ https://cssradar.com/blog/css-radar-animation.html --- */
 }
 /* End of claude generated code */
 
+/* Age label */
+.age-label {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: var(--dim);
+  text-transform: uppercase;
+  font-size: 14px;
+}
+
+.age-label.recent {
+  top: 38%;
+}
+
+.age-label.old {
+  top: 1%;
+}
+
 /* Preview window */
 .preview {
   position: absolute;
