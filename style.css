@@ -10,7 +10,7 @@
   --gold: #C9A227;
   --amber: #B4472A;
 
-  --sweep-duration: 9s;
+  --sweep-duration: 10s;
 }
 
 html {
@@ -255,7 +255,7 @@ https://cssradar.com/blog/css-radar-animation.html --- */
 .orrery-sweep {
   position: absolute;
   inset: 0;
-  animation: radar-sweep var(--sweep-duration) linear infinite;
+  /* Added directly by Claude: removed the radar-sweep animation, rotation is now set by JS */
   overflow: inherit;
 }
 
@@ -279,11 +279,7 @@ https://cssradar.com/blog/css-radar-animation.html --- */
   );
 }
 
-@keyframes radar-sweep {
-  to {
-    rotate: 1turn;
-  }
-}
+/* Added directly by Claude: removed @keyframes radar-sweep (no longer used) */
 
 /* Centre Plot */
 .orrery-centre {
@@ -313,8 +309,7 @@ https://cssradar.com/blog/css-radar-animation.html --- */
 }
 
 .orrery-plot .bi {
-  animation: orrery-ping var(--sweep-duration) linear infinite;
-  animation-delay: calc(var(--turn) * var(--sweep-duration));
+  /* Added directly by Claude: removed looping ping animation + delay, pings are triggered by JS */
   opacity: 0.45;
   font-size: 12px;
 }
@@ -339,15 +334,23 @@ https://cssradar.com/blog/css-radar-animation.html --- */
 }
 /*--- End of adapted code --- */
 
-/* pause orrery sweep if orrery paused */
-.orrery-paused .orrery-sweep {
-  animation-play-state: paused;
+/* --- Added directly by Claude: draggable sweep ---
+Removed the .orrery-paused rules, pausing is now handled in JS */
+
+/* One-shot ping, restarted by JS each time the hand passes */
+.orrery-plot .bi.ping {
+  animation: orrery-ping var(--sweep-duration) linear;
 }
 
-/* pause orrery icons if orrery paused */
-.orrery-paused .orrery-plot .bi {
-  animation-play-state: paused;
+.dial {
+  touch-action: none;  /* stop the page scrolling while dragging on touch screens */
+  cursor: grab;
 }
+
+.dial.dragging {
+  cursor: grabbing;
+}
+/* --- End of code added directly by Claude --- */
 
 /* Orrery hand */
 .hand {

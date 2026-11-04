@@ -189,4 +189,10 @@ Feedback 30/10/26:
     - Simple hover effects but makes it look so much nicer.
     - Especially the size increase in the icon
 
+#31
+- Used Claude to directly add drag feature to orrery
+    - First time letting Claude directly edit code itself (not as much time left)
+    - Made sure to have it to only code in comment blocks clearly stating they've been added by Claude for transparency
+    - If I have extra time, will come back to this and write it myself. Want to focus on more important things right now
+
 

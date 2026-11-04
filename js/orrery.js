@@ -95,6 +95,8 @@ const R_MIN = 0.1; // To make sure no plot is at r = 0 (center)
 const PAD = 0.02; // Keeping padding at sector edges
 
 const list = document.querySelector(".orrery-plots");
+/* Added directly by Claude: list of plots, used by the draggable sweep to know which plots it passes */
+const plots = [];
 const now = new Date();
 let i = 0;
 
@@ -135,18 +137,93 @@ for (const type in SECTORS) {
         icon.setAttribute("aria-hidden", "true");
         a.append(icon);
 
-        // Update preview plot when animation starts
-        icon.addEventListener("animationstart", () => {
-            showSelectedProject(project, li)
-        });
-
-        // Update prview plot when animation iterates
-        icon.addEventListener("animationiteration", () => {
-            showSelectedProject(project, li)
-        });
+        /* Added directly by Claude: replaces the animationstart / animationiteration listeners.
+        Pings are now triggered by the JS sweep (see setSweep below) */
+        plots.push({ turn, icon, li, project });
+        project.plot = li; // also lets the list view highlight the matching dial plot
     });
 }
 /* End of Claude copied code */
+
+/* --- Added directly by Claude: draggable sweep ---
+One JS angle (sweepTurn) is the source of truth for the sweep and the pings.
+A requestAnimationFrame loop moves it forward, dragging sets it directly.
+Speed still comes from --sweep-duration in style.css. */
+const sweepEl = document.querySelector(".orrery-sweep");
+const DURATION = parseFloat(
+    getComputedStyle(document.documentElement).getPropertyValue("--sweep-duration")
+) * 1000; // "10s" -> 10000ms (assumes the variable is in seconds)
+
+let sweepTurn = 0;   // current angle, 0-1, north = 0, clockwise
+let dragging = false;
+let lastTime = null;
+
+// Move the sweep to a new angle and ping any plots it passed
+function setSweep(next) {
+    next = ((next % 1) + 1) % 1;            // wrap into 0-1
+    let delta = next - sweepTurn;
+    if (delta > 0.5) delta -= 1;            // take the short way across the 0/1 seam
+    if (delta < -0.5) delta += 1;
+
+    for (const plot of plots) {
+        // How far the plot sits from the old angle, in the direction we're moving
+        const gap = delta >= 0
+            ? ((plot.turn - sweepTurn) % 1 + 1) % 1
+            : ((sweepTurn - plot.turn) % 1 + 1) % 1;
+        if (gap > 0 && gap <= Math.abs(delta)) ping(plot);
+    }
+
+    sweepTurn = next;
+    sweepEl.style.rotate = `${sweepTurn}turn`;
+}
+
+function ping({ icon, li, project }) {
+    icon.classList.remove("ping");
+    void icon.offsetWidth;                  // forces the CSS animation to restart
+    icon.classList.add("ping");
+    showSelectedProject(project, li);
+}
+
+// Auto-rotate
+function tick(time) {
+    if (lastTime !== null && !paused && !dragging) {
+        const dt = Math.min(time - lastTime, 100); // avoid a big jump after switching tabs
+        setSweep(sweepTurn + dt / DURATION);
+    }
+    lastTime = time;
+    requestAnimationFrame(tick);
+}
+requestAnimationFrame(tick);
+
+// Dragging
+function pointerTurn(e) {
+    const box = dial.getBoundingClientRect();
+    const dx = e.clientX - (box.left + box.width / 2);
+    const dy = e.clientY - (box.top + box.height / 2);
+    return Math.atan2(dx, -dy) / (2 * Math.PI); // bearing from north, clockwise
+}
+
+let grabOffset = 0;
+
+dial.addEventListener("pointerdown", e => {
+    if (e.target.closest("a")) return;      // still let plots be clicked
+    dragging = true;
+    grabOffset = sweepTurn - pointerTurn(e); // so the sweep doesn't jump to the cursor
+    dial.setPointerCapture(e.pointerId);
+    dial.classList.add("dragging");
+});
+
+dial.addEventListener("pointermove", e => {
+    if (dragging) setSweep(pointerTurn(e) + grabOffset);
+});
+
+function endDrag() {
+    dragging = false;
+    dial.classList.remove("dragging");
+}
+dial.addEventListener("pointerup", endDrag);
+dial.addEventListener("pointercancel", endDrag);
+/* --- End of code added directly by Claude --- */
 
 // Function to change / update project preview info
 function showSelectedProject(project, plot) {
