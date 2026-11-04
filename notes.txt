@@ -161,3 +161,8 @@ Feedback 30/10/26:
     - Red for now, will change it to a proper colour later, or something else which shows selected
 - Added simple pause to orrery by toggling class to stop animation
     - Still need to change text on button everytime it's paused / played
+
+#27
+- Updated pause button text context on toggle
+- Added thumbnails to the assets for the preview panel, and to the projects object
+- Used Claude to help me create the sector labels and divider

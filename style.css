@@ -368,6 +368,37 @@ https://cssradar.com/blog/css-radar-animation.html --- */
   white-space: nowrap;
 }
 
+/* Claude generated code for Sector labels */
+.orrery-plot,
+.orrery-label {
+  --angle: calc(var(--turn) * 1turn);
+  position: absolute;
+  left: calc(50% + sin(var(--angle)) * var(--distance));
+  top:  calc(50% - cos(var(--angle)) * var(--distance));
+  translate: -50% -50%;
+}
+
+.orrery-label {
+  --distance: 57%;  /* outside the outer ring (50%) */
+  text-transform: uppercase;
+  color: var(--gold);
+  white-space: nowrap;
+  pointer-events: none;
+}
+
+.orrery-divider {
+  position: absolute;
+  left: 50%;
+  bottom: 50%;
+  width: 1px;
+  height: 50%;                      /* centre to outer ring */
+  background: var(--border);
+  transform-origin: bottom center;  /* pivot at the dial centre */
+  rotate: calc(var(--turn) * 1turn);
+  pointer-events: none;
+}
+/* End of claude generated code */
+
 /* Preview window */
 .preview {
   position: absolute;
