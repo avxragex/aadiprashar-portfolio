@@ -34,6 +34,10 @@ body {
   scroll-snap-type: y proximity;
 }
 
+[hidden] {
+  display: none !important;
+}
+
 /* Buttons */
 .button {
   border: 2px solid var(--border);
@@ -495,6 +499,42 @@ https://cssradar.com/blog/css-radar-animation.html --- */
   right: 20px;
   display: flex;
   gap: 12px;
+}
+
+/* Projects List View */
+.list-view {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 30vw;
+  max-height: 70vh;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.list-row {
+  display: flex;
+  gap: 20px;
+  padding: 20px 4px;
+  border-top: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+  align-items: center;
+}
+
+.list-row a {
+  text-decoration: none;
+  color: var(--offwhite);
+  font-size: 24px;
+}
+
+.list-text {
+  text-transform: uppercase;
+  font-family: 'JetBrains Mono', monospace;
+  color: var(--dim);
+  margin-left: auto;
 }
 
 /* ----------------

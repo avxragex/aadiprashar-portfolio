@@ -175,3 +175,15 @@ Feedback 30/10/26:
 - Made button functional to change between list and dial
     - Still need to add list css (Not sure if I keep preview with list yet or not)
 
+05/11/2026
+
+#29
+- Working on the list view CSS
+    - Took inspiration from Josie Allen's list view: https://www.itsjosie.com/
+- Made list view look cleaner, but list hidden stopped working after giving it display: flex
+    - Realised it's because HTML prioritised our spreadsheet, so needed to add to CSS
+    - Have used random font sizes / width / height. Will most likely change
+
+
+
+

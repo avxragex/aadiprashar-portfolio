@@ -158,6 +158,7 @@ function showSelectedProject(project, plot) {
     previewImage.src = project.thumbnail;
     previewImage.alt = project.title;
 
+    if (!plot) return;
     if (selectedPlot) selectedPlot.classList.remove("selected"); // remove any previously selected plots
     selectedPlot = plot;
     plot.classList.add("selected"); // add selected class to current selected plot
@@ -192,15 +193,24 @@ for (const { start, end, name } of Object.values(SECTORS)) {
 // Creating a list view from projects
 PROJECTS.forEach(project => {
     const listRow = document.createElement("li");
+    listRow.className = "list-row";
+
     const listLink = document.createElement("a");
+
+    const icon = document.createElement("i");
+    icon.className = "bi " + project.icon;
+    icon.setAttribute("aria-hidden", "true");
 
     listLink.href = project.url;
     listLink.textContent = project.title;
 
     const rowText = document.createElement("span");
-    rowText.textContent = " — " + SECTORS[project.type].name + ", " + project.date;
+    rowText.textContent = SECTORS[project.type].name + ", " + project.date;
+    rowText.className = "list-text";
+
+    listRow.append(icon);
     listRow.append(listLink);
-    listRow.append(rowText)
+    listRow.append(rowText);
 
     // Change preview window on row hover
     listRow.addEventListener("mouseenter", () => showSelectedProject(project, project.plot));
