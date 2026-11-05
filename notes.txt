@@ -195,4 +195,7 @@ Feedback 30/10/26:
     - Made sure to have it to only code in comment blocks clearly stating they've been added by Claude for transparency
     - If I have extra time, will come back to this and write it myself. Want to focus on more important things right now
 
-
+#32
+- Fixed orrery not pausing in list view
+- Started working on about / contact.
+    - Rather than having 2 seperate pages, might just have about / contact split up through a ring arc

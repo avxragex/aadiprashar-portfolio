@@ -186,7 +186,7 @@ function ping({ icon, li, project }) {
 
 // Auto-rotate
 function tick(time) {
-    if (lastTime !== null && !paused && !dragging) {
+    if (lastTime !== null && !paused && !dragging && !dial.hidden) {
         const dt = Math.min(time - lastTime, 100); // avoid a big jump after switching tabs
         setSweep(sweepTurn + dt / DURATION);
     }
