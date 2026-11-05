@@ -199,3 +199,4 @@ Feedback 30/10/26:
 - Fixed orrery not pausing in list view
 - Started working on about / contact.
     - Rather than having 2 seperate pages, might just have about / contact split up through a ring arc
+    - Tried adding images / artwork / combined artworks on the right side of the page, just doesn't look as good / fit in as nicely as the other pages
