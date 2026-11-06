@@ -25,7 +25,7 @@ const PROJECTS = [
         icon: "bi-diamond-fill art-finished",
         thumbnail: "images/artworks/thumbnails/ichigo-kurosaki.png",
         image: "images/artworks/ichigo-kurosaki.png",
-        description: ""
+        description: "A redraw of a drawing I made when I was a kid. I was a fan of Bleach and this character, and tried focusing on the proportions, and colour work; both of which I wasn't able to fully portray in my original artwork from years ago."
     },
     {
         id: "mcqueen",
@@ -38,7 +38,7 @@ const PROJECTS = [
         icon: "bi-diamond-fill art-finished",
         thumbnail: "images/artworks/thumbnails/cars.png",
         image: "images/artworks/cars.png",
-        description: ""
+        description: "A quick draw of Lightning McQueen I did, trying to focus on a softer look, experimenting with a colour style I typically don't go for."
     },
     {
         id: "greyscale",
@@ -51,7 +51,7 @@ const PROJECTS = [
         icon: "bi-diamond-fill art-finished",
         thumbnail: "images/artworks/thumbnails/grey-portrait.png",
         image: "images/artworks/grey-portrait.png",
-        description: ""
+        description: "An old portrait in which I tried very little variation, sticking with a grayish / mundane palette. Really stuck to the proportions are a bit off which becomes clearer to me the more time passes."
     },
     {
         id: "heart",
@@ -64,7 +64,7 @@ const PROJECTS = [
         icon: "bi-diamond-fill art-finished",
         thumbnail: "images/artworks/thumbnails/face-colour-sketch.png",
         image: "images/artworks/face-colour-sketch.png",
-        description: ""
+        description: "A little colour study I did, trying to focus on doing larger but more meaningful strokes, as well as showing more expression through colour. Experimenting with a broader colour palette in digital art."
     },
     {
         id: "teddy",
@@ -77,7 +77,7 @@ const PROJECTS = [
         icon: "bi-circle-fill art-study",
         thumbnail: "images/artworks/thumbnails/body-sketch.png",
         image: "images/artworks/body-sketch.png",
-        description: ""
+        description: "In progress drawing where I focused a lot on the line art, pencil work, and proportions. A lot of my previous works have been very rough with their line art, focusing on shading or colour. With this I attempted to have much cleaner lines than usual, rather than hiding my lines behind shading."
     },
     {
         id: "elizabeth",
@@ -90,7 +90,7 @@ const PROJECTS = [
         icon: "bi-circle-fill art-study",
         thumbnail: "images/artworks/thumbnails/portrait-sketch.png",
         image: "images/artworks/portrait-sketch.png",
-        description: ""
+        description: "An attempt at a realism drawing of a friend. Typically I prefer a more cartoony / anime / character style, but with this piece, I tried focusing on realism rather than stylised. A piece I'm very happy with, especially since it's something out of my comfort zone."
     },
     {
         id: "sketch-one",
@@ -103,7 +103,7 @@ const PROJECTS = [
         icon: "bi-circle-fill art-study",
         thumbnail: "images/artworks/thumbnails/portrait-sketch-2.png",
         image: "images/artworks/portrait-sketch-2.png",
-        description: ""
+        description: "A quick facial expression study I did, trying to focus on the difference a piece can have depending on the expression of the subject."
     },
     {
         id: "sketch-two",
@@ -116,7 +116,7 @@ const PROJECTS = [
         icon: "bi-circle-fill art-study",
         thumbnail: "images/artworks/thumbnails/portrait-sketch-3.png",
         image: "images/artworks/portrait-sketch-3.png",
-        description: ""
+        description: "Quick sketch inspired by Makima (Chainsaw Man) in a different pose, portraying different characters in different poses."
     },
 
     // Websites

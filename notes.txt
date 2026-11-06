@@ -270,6 +270,8 @@ Feedback 30/10/26:
     - I was familiar with an older way, using window on scroll. This way seems much simpler / better
     - First time learning about root margin (from Claude), normally have only seen people use threshold during intersectionObserver
 
+07/11/2026
+
 #43
 - Struggled a lot trying to fix responsiveness for artwork page
     - Was using order -1, -2 to reposition the artwork
@@ -278,3 +280,6 @@ Feedback 30/10/26:
 - Did same w website page
     - I don't really like the layout much anymore for website page
     - Will change later
+
+#44
+- Added descriptions to each piece
