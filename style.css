@@ -864,10 +864,23 @@ Responsiveness (Artwork Page)
 ---------------- */
 @media (max-width: 1000px) {
 
-  .project-page {
-    display: flex;
-    flex-direction: column;
+  .artwork-arc {
+    display: none;
   }
+
+  .artwork, .artwork-content {
+    position: static;
+    padding: 20px;
+    transform: none;
+    max-width: none;
+    width: 100%;
+  }
+
+  .artwork img {
+    width: 100vw;
+    height: auto;
+  }
+
 }
 
 /* ************************************
@@ -994,10 +1007,11 @@ Responsiveness (Artwork Page)
 
 .website-paragraph h2 {
   margin-bottom: 14px;
+  font-size: 30px;
 }
 
 .website-paragraph p {
-  line-height: 1.75;
+  font-size: 18px;
 }
 
 .process-item {
@@ -1013,4 +1027,47 @@ Responsiveness (Artwork Page)
 .process-item figcaption {
   color: var(--dim);
   margin-top: 12px;
+}
+
+/* ----------------
+Responsiveness (Website Page)
+---------------- */
+@media (max-width: 1000px) {
+
+  .website-arc {
+    display: none;
+  }
+
+  .website-start {
+    min-height: auto;
+  }
+
+  .website-content {
+    position: static;
+    padding: 20px;
+    transform: none;
+    max-width: none;
+    width: 100%;
+  }
+
+  .process-section h2 {
+    font-size: 24px;
+  }
+
+  .process-section p {
+    font-size: 16px;
+  }
+
+  .website-mockup {
+    position: static;
+    padding: 20px;
+    transform: none;
+    max-width: none;
+    width: 100%;
+  }
+
+  .process-section {
+    padding: 20px;
+  }
+
 }

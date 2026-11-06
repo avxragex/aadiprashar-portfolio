@@ -269,4 +269,12 @@ Feedback 30/10/26:
 - Used Claude to help me understand how to dynamically update navbar using js
     - I was familiar with an older way, using window on scroll. This way seems much simpler / better
     - First time learning about root margin (from Claude), normally have only seen people use threshold during intersectionObserver
-- 
+
+#43
+- Struggled a lot trying to fix responsiveness for artwork page
+    - Was using order -1, -2 to reposition the artwork
+    - This for some reason caused an overflow error, and wouldn't let me increase the side of the image. If I did, it would ruin the dimensions of the other elements.
+    - Spent a while trying to fix it, till I realised I could just swap image around in HTML, like I did for index :')
+- Did same w website page
+    - I don't really like the layout much anymore for website page
+    - Will change later
