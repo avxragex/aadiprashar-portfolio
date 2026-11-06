@@ -283,3 +283,6 @@ Feedback 30/10/26:
 
 #44
 - Added descriptions to each piece
+
+#45
+- Converted all png (original size) images to webp for performance, as well as updated them in projects.

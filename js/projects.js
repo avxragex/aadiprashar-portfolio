@@ -10,8 +10,8 @@ const PROJECTS = [
         status: "finished",
         url: "artwork.html?id=amethyst",
         icon: "bi-diamond-fill art-finished",
-        thumbnail: "images/artworks/thumbnails/amethyst.png",
-        image: "images/artworks/amethyst.png",
+        thumbnail: "images/artworks/thumbnails/amethyst.webp",
+        image: "images/artworks/amethyst.webp",
         description: "This was one of my first coloured pieces where I decided to pay thorough attention to colour study, and actually experiment with it. Before this, I typically preferred only sketches, or grayscale rather than fully coloured pieces."
     },
     {
@@ -23,8 +23,8 @@ const PROJECTS = [
         status: "working",
         url: "artwork.html?id=ichigo",
         icon: "bi-diamond-fill art-finished",
-        thumbnail: "images/artworks/thumbnails/ichigo-kurosaki.png",
-        image: "images/artworks/ichigo-kurosaki.png",
+        thumbnail: "images/artworks/thumbnails/ichigo-kurosaki.webp",
+        image: "images/artworks/ichigo-kurosaki.webp",
         description: "A redraw of a drawing I made when I was a kid. I was a fan of Bleach and this character, and tried focusing on the proportions, and colour work; both of which I wasn't able to fully portray in my original artwork from years ago."
     },
     {
@@ -36,8 +36,8 @@ const PROJECTS = [
         status: "finished",
         url: "artwork.html?id=mcqueen",
         icon: "bi-diamond-fill art-finished",
-        thumbnail: "images/artworks/thumbnails/cars.png",
-        image: "images/artworks/cars.png",
+        thumbnail: "images/artworks/thumbnails/cars.webp",
+        image: "images/artworks/cars.webp",
         description: "A quick draw of Lightning McQueen I did, trying to focus on a softer look, experimenting with a colour style I typically don't go for."
     },
     {
@@ -49,8 +49,8 @@ const PROJECTS = [
         status: "finished",
         url: "artwork.html?id=greyscale",
         icon: "bi-diamond-fill art-finished",
-        thumbnail: "images/artworks/thumbnails/grey-portrait.png",
-        image: "images/artworks/grey-portrait.png",
+        thumbnail: "images/artworks/thumbnails/grey-portrait.webp",
+        image: "images/artworks/grey-portrait.webp",
         description: "An old portrait in which I tried very little variation, sticking with a grayish / mundane palette. Really stuck to the proportions are a bit off which becomes clearer to me the more time passes."
     },
     {
@@ -62,8 +62,8 @@ const PROJECTS = [
         status: "working",
         url: "artwork.html?id=heart",
         icon: "bi-diamond-fill art-finished",
-        thumbnail: "images/artworks/thumbnails/face-colour-sketch.png",
-        image: "images/artworks/face-colour-sketch.png",
+        thumbnail: "images/artworks/thumbnails/face-colour-sketch.webp",
+        image: "images/artworks/face-colour-sketch.webp",
         description: "A little colour study I did, trying to focus on doing larger but more meaningful strokes, as well as showing more expression through colour. Experimenting with a broader colour palette in digital art."
     },
     {
@@ -75,8 +75,8 @@ const PROJECTS = [
         status: "working",
         url: "artwork.html?id=teddy",
         icon: "bi-circle-fill art-study",
-        thumbnail: "images/artworks/thumbnails/body-sketch.png",
-        image: "images/artworks/body-sketch.png",
+        thumbnail: "images/artworks/thumbnails/body-sketch.webp",
+        image: "images/artworks/body-sketch.webp",
         description: "In progress drawing where I focused a lot on the line art, pencil work, and proportions. A lot of my previous works have been very rough with their line art, focusing on shading or colour. With this I attempted to have much cleaner lines than usual, rather than hiding my lines behind shading."
     },
     {
@@ -88,8 +88,8 @@ const PROJECTS = [
         status: "study",
         url: "artwork.html?id=elizabeth",
         icon: "bi-circle-fill art-study",
-        thumbnail: "images/artworks/thumbnails/portrait-sketch.png",
-        image: "images/artworks/portrait-sketch.png",
+        thumbnail: "images/artworks/thumbnails/portrait-sketch.webp",
+        image: "images/artworks/portrait-sketch.webp",
         description: "An attempt at a realism drawing of a friend. Typically I prefer a more cartoony / anime / character style, but with this piece, I tried focusing on realism rather than stylised. A piece I'm very happy with, especially since it's something out of my comfort zone."
     },
     {
@@ -101,8 +101,8 @@ const PROJECTS = [
         status: "study",
         url: "artwork.html?id=sketch-one",
         icon: "bi-circle-fill art-study",
-        thumbnail: "images/artworks/thumbnails/portrait-sketch-2.png",
-        image: "images/artworks/portrait-sketch-2.png",
+        thumbnail: "images/artworks/thumbnails/portrait-sketch-2.webp",
+        image: "images/artworks/portrait-sketch-2.webp",
         description: "A quick facial expression study I did, trying to focus on the difference a piece can have depending on the expression of the subject."
     },
     {
@@ -114,8 +114,8 @@ const PROJECTS = [
         status: "study",
         url: "artwork.html?id=sketch-two",
         icon: "bi-circle-fill art-study",
-        thumbnail: "images/artworks/thumbnails/portrait-sketch-3.png",
-        image: "images/artworks/portrait-sketch-3.png",
+        thumbnail: "images/artworks/thumbnails/portrait-sketch-3.webp",
+        image: "images/artworks/portrait-sketch-3.webp",
         description: "Quick sketch inspired by Makima (Chainsaw Man) in a different pose, portraying different characters in different poses."
     },
 
@@ -128,7 +128,7 @@ const PROJECTS = [
         status: "finished",
         url: "mochi-donuts.html",
         icon: "bi-diamond website",
-        thumbnail: "images/websites/thumbnails/mochi-donuts-thumb.png",
+        thumbnail: "images/websites/thumbnails/mochi-donuts-thumb.webp",
         description: ""
     }
 
