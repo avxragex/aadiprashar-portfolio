@@ -80,6 +80,7 @@ const PROJECTS = [
         description: ""
     },
     {
+        id: "elizabeth",
         title: "Elizabeth",
         type: "art",
         date: "2025-06-28",

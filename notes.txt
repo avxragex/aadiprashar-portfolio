@@ -225,3 +225,8 @@ Feedback 30/10/26:
     - Also added specific id's to the urls.
 - Added id's to artwork.html elements so I can update them
 - Made updatePage.js which dynamically updates the artwork elements
+
+#36
+- Added simple error prevention in artwork page
+- Added prev / next artwork button functionallity
+    + Disabled doesn't seem to be working right now, trying to fix
