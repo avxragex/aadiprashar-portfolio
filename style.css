@@ -726,6 +726,10 @@ Contact Section
   color: var(--gold);
 }
 
+.project-header {
+  margin-right: 20px;
+}
+
 .website-start {
   position: relative;
   min-height: 100vh;
@@ -746,6 +750,7 @@ Contact Section
 .website-arc .ring {
   stroke-width: 3;
   stroke-dasharray: 60 80;
+  fill: var(--bg);
 }
 
 /* Content */
@@ -805,6 +810,23 @@ Contact Section
   gap: 10px;
 }
 
+/* Mockup image */
+.website-mockup {
+  position: absolute;
+  top: 50%;
+  left: 20%;
+  transform: translate(0, -50%);
+  border-radius: 10%;
+  width: 60vw;
+  z-index: 1;
+}
+
+.website-mockup img {
+  width: 100%;
+  display: block;
+}
+
+/* Process Section */
 .process-section {
   display: flex;
   flex-direction: column;
@@ -833,4 +855,9 @@ Contact Section
   width: 100%;
   display: block;
   border: 1px solid var(--border);
+}
+
+.process-item figcaption {
+  color: var(--dim);
+  margin-top: 12px;
 }
