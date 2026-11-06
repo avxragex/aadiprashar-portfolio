@@ -256,3 +256,8 @@ Feedback 30/10/26:
 - Gave the sticky wordmark a background
     - I added the background on mobile first, thinking it would be nice to keep nav at the bottom, and header at the top constantly. Then thought it would be a nice change to desktop as well.
 - Hid the orrery / orrery buttons on mobile
+
+#41
+- Still working on index responiveness
+    - Removes all the absolute positioning from the elements
+    - Put key at the start rather than the bottom

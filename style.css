@@ -200,6 +200,18 @@ Orrery Section
   scroll-snap-align: start;
 }
 
+.orrery-preview {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  transform: translateY(-50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6vw;
+}
+
 /* Name wordmark label */
 .name-label {
   position: sticky;
@@ -232,10 +244,9 @@ Orrery Section
 
 /* Dial */
 .dial {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  position: relative;
+  top: auto;
+  left: auto;
   width: clamp(250px, 40%, 1000px);
   aspect-ratio: 1;
   border-radius: 50%;
@@ -445,13 +456,11 @@ Removed the .orrery-paused rules, pausing is now handled in JS */
 
 /* Preview window */
 .preview {
-  position: absolute;
-  top: 50%;
-  transform: translate(0, -50%);
+  position: relative;
+  top: auto;
   width: 300px;
   height: auto;
   padding: 20px;
-  margin-left: 3vw;
   display: flex;
   flex-direction: column;
   gap: 20px;
@@ -646,6 +655,11 @@ About Section
   padding-bottom: 10px;
 }
 
+.about-data .data-row a {
+  text-decoration: none;
+  color: var(--gold);
+}
+
 .about-description {
   max-width: 50ch;
   font-size: 20px;
@@ -676,8 +690,50 @@ Responsiveness
   }
 
   /* Hide dial and buttons */
-  .dial, .orrery-buttons {
+  .dial, .orrery-buttons, .about-arc {
     display: none;
+  }
+
+  /* Removing all the absolute positioning */
+  .key, .preview, .list-view, .about-content {
+    position: static;
+    width: auto;
+    max-width: none;
+    max-height: none;
+    margin: 0;
+    padding: 0;
+    transform: translate(0, 0);
+  }
+
+  .key {
+    margin: 20px;
+  }
+
+  /* List View */
+  .list-view {
+    margin: 20px;
+  }
+
+  .list-row {
+    padding: 12px 2px;
+    gap: 12px;
+  }
+
+  .list-row a {
+    font-size: 17px;
+  }
+
+  .list-row i, .list-text {
+    font-size: 11px;
+  }
+
+  .preview {
+    margin: 20px;
+    padding: 10px;
+  }
+
+  .about-section {
+    padding: 10px;
   }
 }
 
@@ -820,9 +876,9 @@ Responsiveness
 /* Ring Arc */
 .website-arc {
   position: absolute;
-  top: 5%;
+  top: 10%;
   transform: translate(0, -50%);
-  left: 40%;
+  left: 30%;
   width: clamp(1200px, 130vw, 2300px);
   aspect-ratio: 1;
   z-index: 2;
@@ -840,7 +896,7 @@ Responsiveness
   transform: translate(0, -50%);
   top: 40%;
   right: 13vw;
-  max-width: 25vw;
+  max-width: 40vw;
   display: flex;
   flex-direction: column;
   z-index: 10;
@@ -894,7 +950,7 @@ Responsiveness
 /* Mockup image */
 .website-mockup {
   position: absolute;
-  top: 50%;
+  top: 45%;
   left: 20%;
   transform: translate(0, -50%);
   border-radius: 10%;

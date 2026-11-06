@@ -47,62 +47,13 @@
     <p class="last-name">Prashar</p>
   </a>
 
+  
+
   <!-- *************** -->
   <!-- Orrery Section -->
   <!-- *************** -->
   <section class="orrery-section" id="orrery">
-    <!-- Dial Rings + Plots -->
-    <div class="dial">
-      <svg class="rings" aria-hidden="true">
-        <circle class="ring" r="12.5%" />
-        <circle class="ring" r="25%" />
-        <circle class="ring" r="37.5%" />
-        <circle class="ring" r="50%" />
-      </svg>
-
-      <!-- Dial Sweep -->
-      <div class="orrery-sweep">
-        <div class="sweep"></div>
-        <div class="hand"></div>
-      </div>
-
-      <!-- Centre + Plots -->
-      <div class="orrery-centre" aria-hidden="true"></div>
-      <ul class="orrery-plots"></ul>
-      <div class="orrery-labels"></div>
-
-      <div class="age-label recent">Recent</div>
-      <div class="age-label old">Old</div>
-
-      <div class="orrery-name">Aadi Prashar</div>
-    </div>
-
-    <!-- List View -->
-    <div class="list-view" id="list-view"></div>
-
-    <!-- Preview Window -->
-    <div class="preview">
-        <img class="preview-image" id="preview-image" src="images/artworks/thumbnails/amethyst.png" alt="Amethyst">
-        <h1 class="preview-title" id="preview-title">Amethyst</h1>
-
-        <dl class="preview-data">
-            <div class="data-row">
-              <dt>Date</dt>
-              <dd id="preview-date">2025-07-01</dd>
-            </div>
-            <div class="data-row">
-              <dt>Time Taken</dt>
-              <dd id="preview-time">4 Days</dd>
-            </div>
-            <div class="data-row">
-              <dt>Type</dt>
-              <dd id="preview-type">Artwork</dd>
-            </div>
-        </dl>
-        <a class="button" id="preview-link" href="artwork.html">View Piece</a>
-    </div>
-
-    <!-- Keys -->
+    <!-- Key -->
     <div class="key">
       <h1 class="key-title">KEY</h1>
       <ul>
@@ -112,6 +63,60 @@
         <li><i class="bi bi-circle-fill art-study"></i>Studies / Unfinished Artwork</li>
         <li><i class="bi bi-heart fav"></i>Favourites</li>
       </ul>
+    </div>
+
+    <!-- List View -->
+    <div class="list-view" id="list-view"></div>
+
+
+    <div class="orrery-preview">
+      <!-- Preview Window -->
+      <div class="preview">
+          <img class="preview-image" id="preview-image" src="images/artworks/thumbnails/amethyst.png" alt="Amethyst">
+          <h1 class="preview-title" id="preview-title">Amethyst</h1>
+
+          <dl class="preview-data">
+              <div class="data-row">
+                <dt>Date</dt>
+                <dd id="preview-date">2025-07-01</dd>
+              </div>
+              <div class="data-row">
+                <dt>Time Taken</dt>
+                <dd id="preview-time">4 Days</dd>
+              </div>
+              <div class="data-row">
+                <dt>Type</dt>
+                <dd id="preview-type">Artwork</dd>
+              </div>
+          </dl>
+          <a class="button" id="preview-link" href="artwork.html?id=amethyst">View Piece</a>
+      </div>
+
+      <!-- Dial Rings + Plots -->
+      <div class="dial">
+        <svg class="rings" aria-hidden="true">
+          <circle class="ring" r="12.5%" />
+          <circle class="ring" r="25%" />
+          <circle class="ring" r="37.5%" />
+          <circle class="ring" r="50%" />
+        </svg>
+
+        <!-- Dial Sweep -->
+        <div class="orrery-sweep">
+          <div class="sweep"></div>
+          <div class="hand"></div>
+        </div>
+
+        <!-- Centre + Plots -->
+        <div class="orrery-centre" aria-hidden="true"></div>
+        <ul class="orrery-plots"></ul>
+        <div class="orrery-labels"></div>
+
+        <div class="age-label recent">Recent</div>
+        <div class="age-label old">Old</div>
+
+        <div class="orrery-name">Aadi Prashar</div>
+      </div>
     </div>
 
     <!-- Buttons -->
