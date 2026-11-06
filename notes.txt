@@ -240,3 +240,19 @@ Feedback 30/10/26:
 - Started work on Mochi Donuts page
 - Added button to see original design document
     - Not sure what images / process to add in general
+
+#39
+- Added finalised mockup image of mobile mochi Donuts with experimental positioning
+    - I don't know if I like the layout / positioning of the entire website page. Will come back to It
+
+#40
+- Working on responiveness of the website
+- Removed the contact section
+- Used Claude to help display list when width too small for orrery
+    - Wasn't sure how to compare window width in js
+- Was using artwork css for about section, so renamed / copied over artwork styling so I can edit the about section.
+    - Not really the best since I'm duplicating code, but just faster. Will change later
+- Made index navbar stay at the bottom of the page on mobile.
+- Gave the sticky wordmark a background
+    - I added the background on mobile first, thinking it would be nice to keep nav at the bottom, and header at the top constantly. Then thought it would be a nice change to desktop as well.
+- Hid the orrery / orrery buttons on mobile

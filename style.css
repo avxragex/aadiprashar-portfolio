@@ -6,7 +6,7 @@
   --border: #342A1C;
   --offwhite: #EDE6D6;
   --dim: #AB9E8B;
-  --line: #241E15; 
+  --line: #241E15;
   --gold: #C9A227;
   --amber: #B4472A;
 
@@ -124,7 +124,8 @@ body {
 Home section 
 ---------------- */
 .hero-section {
-  height: 100vh;
+  min-height: 100vh;
+  height: auto;
   padding: 0 clamp(20px, 7vw, 140px);
   display: flex;
   flex-direction: column;
@@ -174,7 +175,6 @@ Home section
 }
 
 .scroll-text {
-  font-family: "Cormorant Garamond", serif;
   font-size: 12px;
   letter-spacing: 5px;
   color: var(--gold);
@@ -194,7 +194,8 @@ Orrery Section
 ---------------- */
 .orrery-section {
   position: relative;
-  height: 100vh;
+  min-height: 100vh;
+  height: auto;
   border-bottom: 1px solid var(--line);
   scroll-snap-align: start;
 }
@@ -205,13 +206,20 @@ Orrery Section
   z-index: 10;
   top: 20px;
   margin: 20px 0 0 20px;
-  font-family: "Cormorant Garamond", serif;
   text-transform: uppercase;
   text-decoration: none;
 }
 
 .home-name-label {
   left: 20px;
+  display: block;
+  top: 0;
+  margin: 0;
+  left: 0;
+  padding: 12px 24px;
+  background: var(--bg);
+  border-bottom: 1px solid var(--border);
+  z-index: 20;
 }
 
 .name-label .first-name {
@@ -277,12 +285,10 @@ https://cssradar.com/blog/css-radar-animation.html --- */
   position: absolute;
   inset: 0;
   border-radius: inherit;
-  background: conic-gradient(
-    from 0deg,
-    transparent 0 89%,
-    color-mix(in srgb, var(--gold) 8%, transparent) 94%,
-    color-mix(in srgb, var(--gold) 22%, transparent) 97%
-  );
+  background: conic-gradient(from 0deg,
+      transparent 0 89%,
+      color-mix(in srgb, var(--gold) 8%, transparent) 94%,
+      color-mix(in srgb, var(--gold) 22%, transparent) 97%);
 }
 
 /* Added directly by Claude: removed @keyframes radar-sweep (no longer used) */
@@ -325,7 +331,7 @@ https://cssradar.com/blog/css-radar-animation.html --- */
 }
 
 @keyframes orrery-ping {
-  0%   {  
+  0% {
     opacity: 1;
     scale: 2.4;
     font-size: 18px;
@@ -338,6 +344,7 @@ https://cssradar.com/blog/css-radar-animation.html --- */
     font-size: 12px;
   }
 }
+
 /*--- End of adapted code --- */
 
 /* --- Added directly by Claude: draggable sweep ---
@@ -349,13 +356,15 @@ Removed the .orrery-paused rules, pausing is now handled in JS */
 }
 
 .dial {
-  touch-action: none;  /* stop the page scrolling while dragging on touch screens */
+  touch-action: none;
+  /* stop the page scrolling while dragging on touch screens */
   cursor: grab;
 }
 
 .dial.dragging {
   cursor: grabbing;
 }
+
 /* --- End of code added directly by Claude --- */
 
 /* Orrery hand */
@@ -387,12 +396,13 @@ Removed the .orrery-paused rules, pausing is now handled in JS */
   --angle: calc(var(--turn) * 1turn);
   position: absolute;
   left: calc(50% + sin(var(--angle)) * var(--distance));
-  top:  calc(50% - cos(var(--angle)) * var(--distance));
+  top: calc(50% - cos(var(--angle)) * var(--distance));
   translate: -50% -50%;
 }
 
 .orrery-label {
-  --distance: 57%;  /* outside the outer ring (50%) */
+  --distance: 57%;
+  /* outside the outer ring (50%) */
   text-transform: uppercase;
   color: var(--gold);
   white-space: nowrap;
@@ -404,12 +414,15 @@ Removed the .orrery-paused rules, pausing is now handled in JS */
   left: 50%;
   bottom: 50%;
   width: 1px;
-  height: 50%;                      /* centre to outer ring */
+  height: 50%;
+  /* centre to outer ring */
   background: var(--border);
-  transform-origin: bottom center;  /* pivot at the dial centre */
+  transform-origin: bottom center;
+  /* pivot at the dial centre */
   rotate: calc(var(--turn) * 1turn);
   pointer-events: none;
 }
+
 /* End of claude generated code */
 
 /* Age label */
@@ -436,7 +449,7 @@ Removed the .orrery-paused rules, pausing is now handled in JS */
   top: 50%;
   transform: translate(0, -50%);
   width: 300px;
-  height: 50vh;
+  height: auto;
   padding: 20px;
   margin-left: 3vw;
   display: flex;
@@ -573,7 +586,8 @@ About Section
 ---------------- */
 .about-section {
   position: relative;
-  height: 100vh;
+  min-height: 100vh;
+  height: auto;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -581,24 +595,91 @@ About Section
   padding: 80px;
   border-bottom: 1px solid var(--line);
   scroll-snap-align: start;
+}
+
+/* Ring Arc */
+.about-arc {
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
+  left: calc(44% - 130vw);
+  width: 130vw;
+  aspect-ratio: 1;
+  z-index: 2;
+}
+
+.about-arc .ring {
+  fill: var(--bg);
+  stroke-width: 3;
+  stroke-dasharray: 60 80;
+}
+
+/* Content */
+.about-content {
+  position: absolute;
+  top: 50%;
+  left: 10vw;
+  transform: translate(0, -50%);
+  max-width: 25vw;
+  display: flex;
+  flex-direction: column;
+  z-index: 10;
+  align-items: flex-start;
+  gap: 30px;
+}
+
+.about-page-title {
+  font-family: 'JetBrains Mono', monospace;
+  text-transform: uppercase;
+  font-size: 13px;
+  color: var(--gold);
+}
+
+.about-title {
+  font-size: 50px;
+}
+
+.about-data {
+  width: 100%;
+  font-family: 'JetBrains Mono', monospace;
+  color: var(--dim);
+  padding-bottom: 10px;
+}
+
+.about-description {
+  max-width: 50ch;
+  font-size: 20px;
 }
 
 /* ----------------
-Contact Section 
+Responsiveness 
 ---------------- */
-.contact-section {
-  position: relative;
-  height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 60px;
-  padding: 80px;
-  border-bottom: 1px solid var(--line);
-  scroll-snap-align: start;
+@media (max-width: 1000px) {
+
+  body {
+    scroll-snap-type: none;
+  }
+
+  /* Put navbar on bottom */
+  .navbar {
+    position: fixed;
+    top: auto;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    flex-direction: row;
+    justify-content: center;
+    transform: none;
+    background: var(--bg);
+    z-index: 20;
+    border-top: 1px solid var(--border);
+  }
+
+  /* Hide dial and buttons */
+  .dial, .orrery-buttons {
+    display: none;
+  }
 }
-
-
 
 /* ************************************
 
