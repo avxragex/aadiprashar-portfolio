@@ -215,3 +215,9 @@ Feedback 30/10/26:
     - File for the index orrery / list view and updating preview panel
     + Still need to add file to update project page info
 - Added different artworks into project object array
+
+#34
+- Added thumbnails for all artwork pieces
+- Started working on descriptions
+
+#35

@@ -315,7 +315,7 @@ https://cssradar.com/blog/css-radar-animation.html --- */
 }
 
 .orrery-plot.selected .bi {
-  color: red;
+  color: var(--gold);
 }
 
 @keyframes orrery-ping {

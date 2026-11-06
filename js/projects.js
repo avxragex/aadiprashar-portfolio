@@ -7,9 +7,10 @@ const PROJECTS = [
         date: "2025-07-01",
         time: "4 Days",
         status: "finished",
-        url: "artwork.html",
+        url: "artwork.html?id=amethyst",
         icon: "bi-diamond-fill art-finished",
-        thumbnail: "images/artworks/thumbnails/amethyst-thumb.png"
+        thumbnail: "images/artworks/thumbnails/amethyst.png",
+        description: "This was one of my first coloured pieces where I decided to pay thorough attention to colour study, and actually experiment with it. Before this, I typically preferred only sketches, or grayscale rather than fully coloured pieces."
     },
     {
         title: "Ichigo Kurosaki",
@@ -19,7 +20,8 @@ const PROJECTS = [
         status: "working",
         url: "artwork.html",
         icon: "bi-diamond-fill art-finished",
-        thumbnail: "images/artworks/thumbnails/ichigo-kurosaki.png"
+        thumbnail: "images/artworks/thumbnails/ichigo-kurosaki.png",
+        description: ""
     },
     {
         title: "Lightning McQueen",
@@ -29,7 +31,8 @@ const PROJECTS = [
         status: "finished",
         url: "artwork.html",
         icon: "bi-diamond-fill art-finished",
-        thumbnail: "images/artworks/thumbnails/cars.png"
+        thumbnail: "images/artworks/thumbnails/cars.png",
+        description: ""
     },
     {
         title: "Grey Portrait",
@@ -39,7 +42,8 @@ const PROJECTS = [
         status: "finished",
         url: "artwork.html",
         icon: "bi-diamond-fill art-finished",
-        thumbnail: "images/artworks/thumbnails/grey-portrait.png"
+        thumbnail: "images/artworks/thumbnails/grey-portrait.png",
+        description: ""
     },
     {
         title: "Face Colour Study",
@@ -49,7 +53,8 @@ const PROJECTS = [
         status: "working",
         url: "artwork.html",
         icon: "bi-diamond-fill art-finished",
-        thumbnail: "images/artworks/thumbnails/face-colour-sketch.png"
+        thumbnail: "images/artworks/thumbnails/face-colour-sketch.png",
+        description: ""
     },
     {
         title: "Line Art Study",
@@ -59,7 +64,8 @@ const PROJECTS = [
         status: "working",
         url: "artwork.html",
         icon: "bi-circle-fill art-study",
-        thumbnail: "images/artworks/thumbnails/body-sketch.png"
+        thumbnail: "images/artworks/thumbnails/body-sketch.png",
+        description: ""
     },
     {
         title: "Portrait Study",
@@ -69,7 +75,8 @@ const PROJECTS = [
         status: "study",
         url: "artwork.html",
         icon: "bi-circle-fill art-study",
-        thumbnail: "images/artworks/thumbnails/portrait-sketch.png"
+        thumbnail: "images/artworks/thumbnails/portrait-sketch.png",
+        description: ""
     },
     {
         title: "Portrait Study II",
@@ -79,7 +86,8 @@ const PROJECTS = [
         status: "study",
         url: "artwork.html",
         icon: "bi-circle-fill art-study",
-        thumbnail: "images/artworks/thumbnails/portrait-sketch-2.png"
+        thumbnail: "images/artworks/thumbnails/portrait-sketch-2.png",
+        description: ""
     },
     {
         title: "Portrait Study III",
@@ -89,7 +97,8 @@ const PROJECTS = [
         status: "study",
         url: "artwork.html",
         icon: "bi-circle-fill art-study",
-        thumbnail: "images/artworks/thumbnails/portrait-sketch-2.png"
+        thumbnail: "images/artworks/thumbnails/portrait-sketch-3.png",
+        description: ""
     },
 
     // Websites
@@ -101,7 +110,8 @@ const PROJECTS = [
         status: "finished",
         url: "website.html",
         icon: "bi-diamond website",
-        thumbnail: "images/websites/thumbnails/mochi-donuts-thumb.png"
+        thumbnail: "images/websites/thumbnails/mochi-donuts-thumb.png",
+        description: ""
     }
 
     // Games
