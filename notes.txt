@@ -221,3 +221,7 @@ Feedback 30/10/26:
 - Started working on descriptions
 
 #35
+- Added id's and image paths to project object.
+    - Also added specific id's to the urls.
+- Added id's to artwork.html elements so I can update them
+- Made updatePage.js which dynamically updates the artwork elements
