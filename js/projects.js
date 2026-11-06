@@ -126,7 +126,7 @@ const PROJECTS = [
         date: "2026-04-12",
         time: "2 Months",
         status: "finished",
-        url: "website.html",
+        url: "mochi-donuts.html",
         icon: "bi-diamond website",
         thumbnail: "images/websites/thumbnails/mochi-donuts-thumb.png",
         description: ""

@@ -31,21 +31,23 @@ if (project) {
 
     // Check if artwork exists
     if (ARTWORKS[index - 1]) {
-        prevButton.disabled = false;
         prevButton.href = prev.url;
+        prevButton.classList.remove("disabled");
     } 
     else {
         // disable button if nothing before
-        prevButton.disabled = true;
+        prevButton.removeAttribute("href");
+        prevButton.classList.add("disabled");
     }
 
     if (ARTWORKS[index + 1]) {
-        nextButton.disabled = false;
-        document.querySelector("#piece-next").href = next.url;
+        nextButton.href = next.url;
+        nextButton.classList.remove("disabled");
     } 
     else {
         // disable button if nothing in front
-        nextButton.disabled = true;
+        nextButton.removeAttribute("href");
+        nextButton.classList.add("disabled");
     }
     
 } 

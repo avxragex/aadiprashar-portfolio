@@ -230,3 +230,6 @@ Feedback 30/10/26:
 - Added simple error prevention in artwork page
 - Added prev / next artwork button functionallity
     + Disabled doesn't seem to be working right now, trying to fix
+
+#37
+- Added a disabled class rather than .disabled for buttons
