@@ -1,64 +1,3 @@
-// Projects array
-const PROJECTS = [
-    {
-        title: "Amethyst",
-        type: "art",
-        date: "2025-07-01",
-        time: "4 Days",
-        status: "finished",
-        url: "artwork.html",
-        icon: "bi-diamond-fill art-finished",
-        thumbnail: "images/artworks/thumbnails/amethyst-thumb.png"
-    },
-    {
-        title: "Amethyst",
-        type: "art",
-        date: "2025-12-12",
-        time: "4 Days",
-        status: "finished",
-        url: "artwork.html",
-        icon: "bi-diamond-fill art-finished",
-        thumbnail: "images/artworks/thumbnails/amethyst-thumb.png"
-    },
-    {
-        title: "Amethyst",
-        type: "art",
-        date: "2023-07-01",
-        time: "4 Days",
-        status: "finished",
-        url: "artwork.html",
-        icon: "bi-diamond-fill art-finished",
-        thumbnail: "images/artworks/thumbnails/amethyst-thumb.png"
-    },
-    {
-        title: "Amethyst",
-        type: "art",
-        date: "2024-07-01",
-        time: "4 Days",
-        status: "finished",
-        url: "artwork.html",
-        icon: "bi-diamond-fill art-finished",
-        thumbnail: "images/artworks/thumbnails/amethyst-thumb.png"
-    },
-    {
-        title: "Mochi Donuts",
-        type: "web",
-        date: "2026-04-12",
-        time: "2 Months",
-        status: "finished",
-        url: "website.html",
-        icon: "bi-diamond website",
-        thumbnail: "images/websites/thumbnails/mochi-donuts-thumb.png"
-    }
-]
-
-// Sectors of the different types of work
-const SECTORS = {
-    art: { start: 0, end: 1/2, name: "Artwork" },
-    web: { start: 1/2, end: 4/5, name: "Website" },
-    game: { start: 4/5, end: 1, name: "Game" }
-}
-
 // Preview elements
 const preview = document.querySelector(".preview");
 const previewTitle = document.querySelector("#preview-title");
@@ -90,7 +29,7 @@ Replaced / edited myself:
  */
 
 const MS_PER_YEAR = 365.25 * 24 * 60 * 60 * 1000;
-const MAX_AGE = 3; // Oldest project year at outer ring
+const MAX_AGE = 2; // Oldest project year at outer ring
 const R_MIN = 0.1; // To make sure no plot is at r = 0 (center)
 const PAD = 0.02; // Keeping padding at sector edges
 

@@ -200,3 +200,18 @@ Feedback 30/10/26:
 - Started working on about / contact.
     - Rather than having 2 seperate pages, might just have about / contact split up through a ring arc
     - Tried adding images / artwork / combined artworks on the right side of the page, just doesn't look as good / fit in as nicely as the other pages
+
+#33
+- Spent a long time deciding how to showcase my artwork
+    - If I want them fully transparent
+    - If I want them with a background etc
+    - In the end, I ended up really liking having a offwhite messy sort of background, giving the artwork the shape rather than fully transparent.
+    - Also gave artwork the highest z-index, so it overlaps the information / content arc, adding to the modular website contrasted w the messy artworks.
+    - This also allows me to have different shaped / ratiod artwork using the same frame, bc of the background.
+    - Because I did still really like the tutors idea of having the artwork bleed, this lets me keep this while also having it fit / look good
+    + However not 100% sure, might change later if I come up with a better idea
+- Split orrery.js up into different files
+    - File to keep my project object array
+    - File for the index orrery / list view and updating preview panel
+    + Still need to add file to update project page info
+- Added different artworks into project object array
