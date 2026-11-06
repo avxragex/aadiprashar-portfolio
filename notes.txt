@@ -261,3 +261,12 @@ Feedback 30/10/26:
 - Still working on index responiveness
     - Removes all the absolute positioning from the elements
     - Put key at the start rather than the bottom
+- Wrapped dial and preview, and centred them.
+    - Makes it feel much less left heavy as they're combined and centred. However, this does make it so the dial isn't the complete focus, I'm not sure if I like it or not.
+
+#42
+- Fixed list view with the orrery / preview wrapper
+- Used Claude to help me understand how to dynamically update navbar using js
+    - I was familiar with an older way, using window on scroll. This way seems much simpler / better
+    - First time learning about root margin (from Claude), normally have only seen people use threshold during intersectionObserver
+- 
