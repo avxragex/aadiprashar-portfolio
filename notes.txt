@@ -233,3 +233,10 @@ Feedback 30/10/26:
 
 #37
 - Added a disabled class rather than .disabled for buttons
+- Renamed website to mochi Donuts
+    - Will have individual pages for each website project unlike artwork
+
+#38
+- Started work on Mochi Donuts page
+- Added button to see original design document
+    - Not sure what images / process to add in general
